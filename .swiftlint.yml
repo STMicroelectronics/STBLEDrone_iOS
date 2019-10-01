@@ -1,0 +1,9 @@
+disabled_rules:
+ - identifier_name
+
+included:
+ - STBLEDrone
+
+excluded:
+ - BlueSTSDK
+ - BlueSTSDK_Gui

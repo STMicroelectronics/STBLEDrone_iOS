@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6600D58722C363D100E3BB84 /* AboutPage.html in Resources */ = {isa = PBXBuildFile; fileRef = 6600D58622C363D100E3BB84 /* AboutPage.html */; };
+		6656D64522C4E52500FAFDE2 /* JoystickSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656D64422C4E52500FAFDE2 /* JoystickSettingsViewController.swift */; };
+		6656D64822C4E6EB00FAFDE2 /* JoystickPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656D64722C4E6EB00FAFDE2 /* JoystickPosition.swift */; };
+		6656D64A22C4E80700FAFDE2 /* JoystickSensitivytMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656D64922C4E80700FAFDE2 /* JoystickSensitivytMenager.swift */; };
+		6656D64D22C50CFC00FAFDE2 /* JoystickModeMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6656D64C22C50CFC00FAFDE2 /* JoystickModeMenager.swift */; };
+		66575F9622C6111100C89D42 /* JoystickOffsetMenager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66575F9522C6111100C89D42 /* JoystickOffsetMenager.swift */; };
+		66575F9922C635DC00C89D42 /* DroneStatus+stringDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66575F9822C635DC00C89D42 /* DroneStatus+stringDescription.swift */; };
+		6662F49822929F6E0067A430 /* STTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6662F49722929F5D0067A430 /* STTheme.framework */; };
+		6662F49922929F6E0067A430 /* STTheme.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6662F49722929F5D0067A430 /* STTheme.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6662F4B12294306D0067A430 /* JoystickScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6662F4B02294306D0067A430 /* JoystickScene.swift */; };
+		666D891A20FF8088000F267F /* STDroneBLE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 666D891920FF8088000F267F /* STDroneBLE.storyboard */; };
+		667EE62622A0254E0047F10F /* DroneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667EE62522A0254E0047F10F /* DroneStatus.swift */; };
+		668CC1A020FDF3B7004859BE /* STDroneBatteryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668CC19F20FDF3B7004859BE /* STDroneBatteryFeature.swift */; };
+		668CC1A220FDF5C8004859BE /* STDroneControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668CC1A120FDF5C8004859BE /* STDroneControllerViewController.swift */; };
+		66B6E15920F6373900DDF49C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B6E15820F6373900DDF49C /* AppDelegate.swift */; };
+		66B6E15E20F6373900DDF49C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E15C20F6373900DDF49C /* Main.storyboard */; };
+		66B6E16020F6373A00DDF49C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E15F20F6373A00DDF49C /* Assets.xcassets */; };
+		66B6E17A20F6380F00DDF49C /* BlueSTSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B6E17720F6380A00DDF49C /* BlueSTSDK.framework */; };
+		66B6E17B20F6380F00DDF49C /* BlueSTSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66B6E17720F6380A00DDF49C /* BlueSTSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66B6E17F20F6381400DDF49C /* BlueSTSDK_Gui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B6E17020F637FE00DDF49C /* BlueSTSDK_Gui.framework */; };
+		66B6E18020F6381400DDF49C /* BlueSTSDK_Gui.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 66B6E17020F637FE00DDF49C /* BlueSTSDK_Gui.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66B6E18720F638FA00DDF49C /* BlueSTSDK.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E18420F638FA00DDF49C /* BlueSTSDK.txt */; };
+		66B6E18820F638FA00DDF49C /* BlueSTSDK_Gui.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E18520F638FA00DDF49C /* BlueSTSDK_Gui.txt */; };
+		66B6E18920F638FA00DDF49C /* MBProgressHUD.txt in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E18620F638FA00DDF49C /* MBProgressHUD.txt */; };
+		66B6E18B20F6395400DDF49C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B6E18A20F6395300DDF49C /* MainViewController.swift */; };
+		66B6E18D20F639E900DDF49C /* st_images_LanchScreen.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E18C20F639E900DDF49C /* st_images_LanchScreen.xcassets */; };
+		66B6E18F20F63A8100DDF49C /* st_images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66B6E18E20F63A8100DDF49C /* st_images.xcassets */; };
+		7E205D132111FCB500EC4F0C /* STDroneRSSIFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E205D122111FCB500EC4F0C /* STDroneRSSIFeature.swift */; };
+		7E6372DD211304E400C30429 /* STDroneJoystickFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6372DC211304E400C30429 /* STDroneJoystickFeature.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6662F49622929F5D0067A430 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6662F49222929F5D0067A430 /* STTheme.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6677187021FA037C006230B6;
+			remoteInfo = STTheme;
+		};
+		6662F49A22929F6E0067A430 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6662F49222929F5D0067A430 /* STTheme.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6677186F21FA037C006230B6;
+			remoteInfo = STTheme;
+		};
+		66B6E16F20F637FE00DDF49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B6E16A20F637FE00DDF49C /* BlueSTSDK_Gui.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 663979141E2E5D0000FBF696;
+			remoteInfo = BlueSTSDK_Gui;
+		};
+		66B6E17620F6380A00DDF49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 665241F01B0B1BB100931F93;
+			remoteInfo = BlueSTSDK;
+		};
+		66B6E17820F6380A00DDF49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 665241FB1B0B1BB100931F93;
+			remoteInfo = BlueSTSDKTests;
+		};
+		66B6E17C20F6380F00DDF49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 665241EF1B0B1BB100931F93;
+			remoteInfo = BlueSTSDK;
+		};
+		66B6E18120F6381400DDF49C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B6E16A20F637FE00DDF49C /* BlueSTSDK_Gui.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 663979131E2E5D0000FBF696;
+			remoteInfo = BlueSTSDK_Gui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66B6E17E20F6380F00DDF49C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6662F49922929F6E0067A430 /* STTheme.framework in Embed Frameworks */,
+				66B6E18020F6381400DDF49C /* BlueSTSDK_Gui.framework in Embed Frameworks */,
+				66B6E17B20F6380F00DDF49C /* BlueSTSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6600D58622C363D100E3BB84 /* AboutPage.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AboutPage.html; sourceTree = "<group>"; };
+		6656D64422C4E52500FAFDE2 /* JoystickSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickSettingsViewController.swift; sourceTree = "<group>"; };
+		6656D64722C4E6EB00FAFDE2 /* JoystickPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickPosition.swift; sourceTree = "<group>"; };
+		6656D64922C4E80700FAFDE2 /* JoystickSensitivytMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickSensitivytMenager.swift; sourceTree = "<group>"; };
+		6656D64C22C50CFC00FAFDE2 /* JoystickModeMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickModeMenager.swift; sourceTree = "<group>"; };
+		66575F9522C6111100C89D42 /* JoystickOffsetMenager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickOffsetMenager.swift; sourceTree = "<group>"; };
+		66575F9822C635DC00C89D42 /* DroneStatus+stringDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DroneStatus+stringDescription.swift"; sourceTree = "<group>"; };
+		6662F49222929F5D0067A430 /* STTheme.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = STTheme.xcodeproj; path = BlueSTSDK_Gui/STTheme/STTheme.xcodeproj; sourceTree = "<group>"; };
+		6662F4B02294306D0067A430 /* JoystickScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickScene.swift; sourceTree = "<group>"; };
+		666D891920FF8088000F267F /* STDroneBLE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = STDroneBLE.storyboard; sourceTree = "<group>"; };
+		667EE62522A0254E0047F10F /* DroneStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneStatus.swift; sourceTree = "<group>"; };
+		668CC19F20FDF3B7004859BE /* STDroneBatteryFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STDroneBatteryFeature.swift; sourceTree = "<group>"; };
+		668CC1A120FDF5C8004859BE /* STDroneControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDroneControllerViewController.swift; sourceTree = "<group>"; };
+		66B6E15520F6373900DDF49C /* STBLEDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STBLEDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B6E15820F6373900DDF49C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		66B6E15D20F6373900DDF49C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		66B6E15F20F6373A00DDF49C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66B6E16420F6373A00DDF49C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B6E16A20F637FE00DDF49C /* BlueSTSDK_Gui.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlueSTSDK_Gui.xcodeproj; path = BlueSTSDK_Gui/BlueSTSDK_Gui.xcodeproj; sourceTree = "<group>"; };
+		66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BlueSTSDK.xcodeproj; path = BlueSTSDK/BlueSTSDK/BlueSTSDK.xcodeproj; sourceTree = "<group>"; };
+		66B6E18420F638FA00DDF49C /* BlueSTSDK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlueSTSDK.txt; sourceTree = "<group>"; };
+		66B6E18520F638FA00DDF49C /* BlueSTSDK_Gui.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlueSTSDK_Gui.txt; sourceTree = "<group>"; };
+		66B6E18620F638FA00DDF49C /* MBProgressHUD.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MBProgressHUD.txt; sourceTree = "<group>"; };
+		66B6E18A20F6395300DDF49C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		66B6E18C20F639E900DDF49C /* st_images_LanchScreen.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = st_images_LanchScreen.xcassets; path = BlueSTSDK_Gui/BlueSTSDK_Gui/st_images_LanchScreen.xcassets; sourceTree = "<group>"; };
+		66B6E18E20F63A8100DDF49C /* st_images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = st_images.xcassets; sourceTree = "<group>"; };
+		7E205D122111FCB500EC4F0C /* STDroneRSSIFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDroneRSSIFeature.swift; sourceTree = "<group>"; };
+		7E6372DC211304E400C30429 /* STDroneJoystickFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDroneJoystickFeature.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66B6E15220F6373900DDF49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B6E17F20F6381400DDF49C /* BlueSTSDK_Gui.framework in Frameworks */,
+				66B6E17A20F6380F00DDF49C /* BlueSTSDK.framework in Frameworks */,
+				6662F49822929F6E0067A430 /* STTheme.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6600D58422C363A500E3BB84 /* AboutPage */ = {
+			isa = PBXGroup;
+			children = (
+				6600D58622C363D100E3BB84 /* AboutPage.html */,
+			);
+			path = AboutPage;
+			sourceTree = "<group>";
+		};
+		66575F8E22C6095C00C89D42 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				667EE62522A0254E0047F10F /* DroneStatus.swift */,
+				6656D64722C4E6EB00FAFDE2 /* JoystickPosition.swift */,
+				6656D64922C4E80700FAFDE2 /* JoystickSensitivytMenager.swift */,
+				6656D64C22C50CFC00FAFDE2 /* JoystickModeMenager.swift */,
+				66575F9522C6111100C89D42 /* JoystickOffsetMenager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		6662F49322929F5D0067A430 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6662F49722929F5D0067A430 /* STTheme.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		668CC19E20FDF3B7004859BE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				668CC19F20FDF3B7004859BE /* STDroneBatteryFeature.swift */,
+				7E205D122111FCB500EC4F0C /* STDroneRSSIFeature.swift */,
+				7E6372DC211304E400C30429 /* STDroneJoystickFeature.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		66B6E14C20F6373900DDF49C = {
+			isa = PBXGroup;
+			children = (
+				6662F49222929F5D0067A430 /* STTheme.xcodeproj */,
+				66B6E18C20F639E900DDF49C /* st_images_LanchScreen.xcassets */,
+				66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */,
+				66B6E16A20F637FE00DDF49C /* BlueSTSDK_Gui.xcodeproj */,
+				66B6E15720F6373900DDF49C /* STBLEDrone */,
+				66B6E15620F6373900DDF49C /* Products */,
+				66B6E18320F638FA00DDF49C /* ThirdPartyLibLicenses */,
+				8C774B807FF8BABD2B43D841 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		66B6E15620F6373900DDF49C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B6E15520F6373900DDF49C /* STBLEDrone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B6E15720F6373900DDF49C /* STBLEDrone */ = {
+			isa = PBXGroup;
+			children = (
+				66B6E15F20F6373A00DDF49C /* Assets.xcassets */,
+				66B6E18E20F63A8100DDF49C /* st_images.xcassets */,
+				668CC19E20FDF3B7004859BE /* Features */,
+				66575F8E22C6095C00C89D42 /* model */,
+				66B6E15820F6373900DDF49C /* AppDelegate.swift */,
+				66B6E18A20F6395300DDF49C /* MainViewController.swift */,
+				668CC1A120FDF5C8004859BE /* STDroneControllerViewController.swift */,
+				6656D64422C4E52500FAFDE2 /* JoystickSettingsViewController.swift */,
+				6662F4B02294306D0067A430 /* JoystickScene.swift */,
+				66575F9822C635DC00C89D42 /* DroneStatus+stringDescription.swift */,
+				66B6E15C20F6373900DDF49C /* Main.storyboard */,
+				666D891920FF8088000F267F /* STDroneBLE.storyboard */,
+				66B6E16420F6373A00DDF49C /* Info.plist */,
+				6600D58422C363A500E3BB84 /* AboutPage */,
+			);
+			path = STBLEDrone;
+			sourceTree = "<group>";
+		};
+		66B6E16B20F637FE00DDF49C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B6E17020F637FE00DDF49C /* BlueSTSDK_Gui.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B6E17220F6380A00DDF49C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B6E17720F6380A00DDF49C /* BlueSTSDK.framework */,
+				66B6E17920F6380A00DDF49C /* BlueSTSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B6E18320F638FA00DDF49C /* ThirdPartyLibLicenses */ = {
+			isa = PBXGroup;
+			children = (
+				66B6E18420F638FA00DDF49C /* BlueSTSDK.txt */,
+				66B6E18520F638FA00DDF49C /* BlueSTSDK_Gui.txt */,
+				66B6E18620F638FA00DDF49C /* MBProgressHUD.txt */,
+			);
+			path = ThirdPartyLibLicenses;
+			sourceTree = "<group>";
+		};
+		8C774B807FF8BABD2B43D841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66B6E15420F6373900DDF49C /* STBLEDrone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66B6E16720F6373A00DDF49C /* Build configuration list for PBXNativeTarget "STBLEDrone" */;
+			buildPhases = (
+				6662F4A12292A1490067A430 /* ShellScript */,
+				66B6E15120F6373900DDF49C /* Sources */,
+				66B6E15220F6373900DDF49C /* Frameworks */,
+				66B6E15320F6373900DDF49C /* Resources */,
+				66B6E17E20F6380F00DDF49C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66B6E17D20F6380F00DDF49C /* PBXTargetDependency */,
+				66B6E18220F6381400DDF49C /* PBXTargetDependency */,
+				6662F49B22929F6E0067A430 /* PBXTargetDependency */,
+			);
+			name = STBLEDrone;
+			productName = STBLEDrone;
+			productReference = 66B6E15520F6373900DDF49C /* STBLEDrone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66B6E14D20F6373900DDF49C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Giovanni Visentini";
+				TargetAttributes = {
+					66B6E15420F6373900DDF49C = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 66B6E15020F6373900DDF49C /* Build configuration list for PBXProject "STBLEDrone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66B6E14C20F6373900DDF49C;
+			productRefGroup = 66B6E15620F6373900DDF49C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 66B6E17220F6380A00DDF49C /* Products */;
+					ProjectRef = 66B6E17120F6380A00DDF49C /* BlueSTSDK.xcodeproj */;
+				},
+				{
+					ProductGroup = 66B6E16B20F637FE00DDF49C /* Products */;
+					ProjectRef = 66B6E16A20F637FE00DDF49C /* BlueSTSDK_Gui.xcodeproj */;
+				},
+				{
+					ProductGroup = 6662F49322929F5D0067A430 /* Products */;
+					ProjectRef = 6662F49222929F5D0067A430 /* STTheme.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				66B6E15420F6373900DDF49C /* STBLEDrone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6662F49722929F5D0067A430 /* STTheme.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = STTheme.framework;
+			remoteRef = 6662F49622929F5D0067A430 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		66B6E17020F637FE00DDF49C /* BlueSTSDK_Gui.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BlueSTSDK_Gui.framework;
+			remoteRef = 66B6E16F20F637FE00DDF49C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		66B6E17720F6380A00DDF49C /* BlueSTSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BlueSTSDK.framework;
+			remoteRef = 66B6E17620F6380A00DDF49C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		66B6E17920F6380A00DDF49C /* BlueSTSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BlueSTSDKTests.xctest;
+			remoteRef = 66B6E17820F6380A00DDF49C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66B6E15320F6373900DDF49C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B6E18D20F639E900DDF49C /* st_images_LanchScreen.xcassets in Resources */,
+				66B6E18720F638FA00DDF49C /* BlueSTSDK.txt in Resources */,
+				66B6E16020F6373A00DDF49C /* Assets.xcassets in Resources */,
+				6600D58722C363D100E3BB84 /* AboutPage.html in Resources */,
+				66B6E18820F638FA00DDF49C /* BlueSTSDK_Gui.txt in Resources */,
+				66B6E18920F638FA00DDF49C /* MBProgressHUD.txt in Resources */,
+				666D891A20FF8088000F267F /* STDroneBLE.storyboard in Resources */,
+				66B6E15E20F6373900DDF49C /* Main.storyboard in Resources */,
+				66B6E18F20F63A8100DDF49C /* st_images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6662F4A12292A1490067A430 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#swiftlint lint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66B6E15120F6373900DDF49C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66575F9922C635DC00C89D42 /* DroneStatus+stringDescription.swift in Sources */,
+				66B6E15920F6373900DDF49C /* AppDelegate.swift in Sources */,
+				667EE62622A0254E0047F10F /* DroneStatus.swift in Sources */,
+				6656D64D22C50CFC00FAFDE2 /* JoystickModeMenager.swift in Sources */,
+				668CC1A020FDF3B7004859BE /* STDroneBatteryFeature.swift in Sources */,
+				6662F4B12294306D0067A430 /* JoystickScene.swift in Sources */,
+				6656D64A22C4E80700FAFDE2 /* JoystickSensitivytMenager.swift in Sources */,
+				6656D64822C4E6EB00FAFDE2 /* JoystickPosition.swift in Sources */,
+				7E6372DD211304E400C30429 /* STDroneJoystickFeature.swift in Sources */,
+				7E205D132111FCB500EC4F0C /* STDroneRSSIFeature.swift in Sources */,
+				668CC1A220FDF5C8004859BE /* STDroneControllerViewController.swift in Sources */,
+				66575F9622C6111100C89D42 /* JoystickOffsetMenager.swift in Sources */,
+				66B6E18B20F6395400DDF49C /* MainViewController.swift in Sources */,
+				6656D64522C4E52500FAFDE2 /* JoystickSettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6662F49B22929F6E0067A430 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = STTheme;
+			targetProxy = 6662F49A22929F6E0067A430 /* PBXContainerItemProxy */;
+		};
+		66B6E17D20F6380F00DDF49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueSTSDK;
+			targetProxy = 66B6E17C20F6380F00DDF49C /* PBXContainerItemProxy */;
+		};
+		66B6E18220F6381400DDF49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BlueSTSDK_Gui;
+			targetProxy = 66B6E18120F6381400DDF49C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66B6E15C20F6373900DDF49C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66B6E15D20F6373900DDF49C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66B6E16520F6373A00DDF49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		66B6E16620F6373A00DDF49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66B6E16820F6373A00DDF49C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				INFOPLIST_FILE = STBLEDrone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.clab.BleDrone2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66B6E16920F6373A00DDF49C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L4QA9SNQK;
+				INFOPLIST_FILE = STBLEDrone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.clab.BleDrone2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B6E15020F6373900DDF49C /* Build configuration list for PBXProject "STBLEDrone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B6E16520F6373A00DDF49C /* Debug */,
+				66B6E16620F6373A00DDF49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66B6E16720F6373A00DDF49C /* Build configuration list for PBXNativeTarget "STBLEDrone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66B6E16820F6373A00DDF49C /* Debug */,
+				66B6E16920F6373A00DDF49C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66B6E14D20F6373900DDF49C /* Project object */;
+}
